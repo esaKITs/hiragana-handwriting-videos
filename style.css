@@ -31,3 +31,15 @@
   .group-label .row-ja{font-family:"Klee One",cursive;font-weight:600;font-synthesis:none}
   .group-label .row-en{font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;font-weight:600}
 }
+
+/* Print refinement: omit redundant catalog heading and compress credits further. */
+@media print{
+  .section-heading{display:none!important}
+  .credits{margin-top:2mm;padding-top:1mm;font-size:5.5pt;line-height:1.12}
+  .credits h2{font-size:6.5pt;line-height:1.1;margin:0 0 .5mm}
+  .credits dl{gap:.3mm}
+  .credits dl>div{grid-template-columns:24mm 1fr;gap:1.2mm;break-inside:avoid}
+  .credits dt,.credits dd{font-size:5.5pt;line-height:1.12}
+  .credits dd span{display:inline;font-size:5pt;line-height:1.1;color:#111}
+  footer{font-size:5pt;line-height:1.1;padding:1mm 0 0;margin-top:1mm}
+}
