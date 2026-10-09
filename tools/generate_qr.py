@@ -33,3 +33,4 @@ for item in videos:
     (out_dir / f'{item["id"]}.svg').write_text(svg, encoding="utf-8")
 
 print(f"Generated {len(videos)} QR codes for {BASE_URL}")
+# Regenerate whenever this script changes.
