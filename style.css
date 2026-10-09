@@ -18,3 +18,16 @@
 
 /* Screen-only row heading typography; retain existing print sizing. */
 @media screen{.group-label .row-ja{font-family:"Klee One",cursive;font-size:0.95rem;font-weight:600;font-synthesis:none}.group-label .row-en{font-family:"Noto Sans JP",sans-serif;font-size:0.84rem;font-weight:600}}
+
+/* Print: preserve bilingual credits and copyright while keeping them compact. */
+@media print{
+  footer{display:block!important;font-size:6.5pt;line-height:1.2;padding:2mm 0 0;margin-top:2mm;border-top:1px solid #bbb;color:#111;break-inside:avoid}
+  .credits{font-size:7pt;line-height:1.25;break-inside:avoid}
+  .credits h2{font-size:8.5pt;line-height:1.2;margin:0 0 1mm}
+  .credits dl{gap:.8mm}
+  .credits dl>div{grid-template-columns:27mm 1fr;gap:2mm;break-inside:avoid}
+  .credits dt,.credits dd{font-size:7pt;line-height:1.25}
+  .credits dd span{display:inline;font-size:6.5pt;color:#111}
+  .group-label .row-ja{font-family:"Klee One",cursive;font-weight:600;font-synthesis:none}
+  .group-label .row-en{font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;font-weight:600}
+}
