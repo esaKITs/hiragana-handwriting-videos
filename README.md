@@ -8,13 +8,13 @@
 - 教材の企画・編集: 江崎哲也（esaKITs）
 - 動画とサムネイルはYouTubeから表示し、このリポジトリには収録していません。各文字のリンクは `videos.json` に記載しています。
 
-## 現在のQRコードについて
+## QRコード
 
-現在の46個のQRコードは、https://hiragana-writing-videos.esakit.chatgpt.site/ の該当文字URL（`?kana=あ` など）を指しています。このZIPではQRコードを変更していません。GitHub Pages公開後、最終公開URLが確定したら、そのURLを使って46個すべてを再生成する予定です。
+46個のQRコードは、GitHub Pages版の各文字URLを直接開くように生成しています。公開先は `https://esakits.github.io/hiragana-handwriting-videos/` です。
 
 ## GitHub Pagesでの公開
 
-このZIPの公開用ファイルはリポジトリのルートに配置する構成です。GitHubの **Settings → Pages → Deploy from a branch → main → /(root)** を選びます。`index.html`、`app.js`、`style.css`、`videos.json`、`qr/` を一緒に配置してください。サーバー側のプログラムやAPIキーは不要です。
+公開用ファイルはリポジトリのルートに配置しています。GitHubの **Settings → Pages → Deploy from a branch → main → /(root)** を選びます。サーバー側のプログラムやAPIキーは不要です。
 
 ページには利用者の入力や学習記録を保存する機能はありません。外部のYouTube動画が削除・非公開にされた場合、その文字の再生はできなくなります。
 
